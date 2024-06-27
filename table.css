@@ -1,0 +1,95 @@
+.main{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   width: 65%;
+   margin-left: 16%;
+   margin-top: 5%;
+   font-family: 'Times New Roman', Times, serif;
+}
+.main h1{
+    background-color: rgb(65, 176, 220);
+    text-align: center;
+    color: aliceblue;
+    height: 20px;
+    font-size: 16px;
+  padding-top: 0.8%;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    
+}
+.first, .second,.third,.fourth,.fifth,.sixth{
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding-bottom: 2%;
+   
+}
+.first input, .second input,.third input,.fourth input,.fifth input,.sixth input{
+border-radius: 15px;
+background-color:  rgb(180, 228, 248);
+}
+.first input{
+   margin-left: 6%;
+}
+.second input{
+    margin-left: 2.7%;
+}
+.third input{
+    margin-left: 4.3%;
+}
+.fourth input{
+    margin-left: 5.8%;
+}
+.fifth input{
+    margin-left: 6.8%;
+}
+.sixth input{
+    margin-left: 2%
+}
+.table1{
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 150px;
+    overflow-x:auto;
+  
+}
+table tr{
+    height: 35px;
+}
+.table1 th{
+    border-collapse: collapse;
+    background-color: rgb(65, 176, 220);
+    color: white;
+    padding-right:15px;
+   width: 82px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align:center;
+   
+  
+}
+table, td {
+    border: 2px solid rgb(171, 71, 71);
+    border-collapse: collapse;
+    border-color: rgb(65, 176, 220);
+  }
+  .table1 td{
+    text-align: center;
+  }
+  .table1 tr:nth-child(even){background-color: #f2f2f2;}
+
+.table1 tr:hover {background-color: #9fcedc;}
+
+.save{
+    margin-left: 15%;
+    margin-top:3%;
+   
+}
+.save button{
+    background-color: skyblue;
+    border-radius: 15px;
+    width: 8%;
+    height: 9%;
+    margin-bottom: 3%;
+}

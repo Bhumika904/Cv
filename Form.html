@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Website.css"/>
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <div class="formgroup">
+            <div class="column">
+                <label class="labels">Full Name:</label>
+                <input type="text" name="fullname" placeholder="Full Name" id="namess"> <span id="error" style="color: red;"></span>
+          
+            </div>
+            <div>
+                <label class="labels">Email:</label>
+                <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div>
+                <label>Gender</label>
+                <input type="radio" required name="gender" id="gender">Male
+                <input type="radio" required name="gender" id="gender">Female
+            </div>
+            <div>
+                <label class="labels">Password:</label>
+                <input type="password" name="password" id="password" /><br />
+            </div>
+            <div>
+                <label class="labels">Confirm Password:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" /><br />
+            </div>
+           
+            <div>
+                <label class="labels">Phone Number:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" />
+            </div>
+            <div>
+                <label>Country:</label>
+                <select  id="country">
+                    <option value = "-1" selected>[choose yours]</option>
+                    <option value = "1">USA</option>
+                    <option value = "2">UK</option>
+                    <option value = "3">INDIA</option>
+                    <option value = "4">NEPAL</option>
+                 </select>
+            </div>
+            <input type="submit" onclick="validateform()">
+        </div>
+    </div>
+    
+</body>
+
+</html>

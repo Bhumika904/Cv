@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
+        <div x-data="{ activeSlide: 0 }" class="relative">
+            <div class="carousel" x-ref="carousel">
+                <button @click="activeSlide = (activeSlide === 0) ? 3  : activeSlide - 1" class="absolute top-1/2 transform -translate-y-1/2 left-4 text-red-600 focus:outline-none">
+                    <i class="fa-solid fa-left-long text-lg"></i>
+                </button>
+        
+                <button @click="activeSlide = (activeSlide === 0 &&  activeSlide === 1 && activeSlide === 2 || activeSlide === 3) ? 0 : activeSlide + 1" class="absolute top-1/2 transform -translate-y-1/2 right-4 text-red-600 focus:outline-none">
+                    <i class="fa-solid fa-right-long text-lg"></i>
+                </button>
+        
+                <div x-ref="carousel" class="carousel-inner">
+                    <div x-show="activeSlide === 0" class="carousel-item">
+                        <img src="img1.png" alt="Robert Downey Jr." class="w-full">
+                    </div>
+                    <div x-show="activeSlide === 1" class="carousel-item">
+                        <img src="img2.png" alt="Chris Evans" class="w-full h-auto">
+                    </div>
+                    <div x-show="activeSlide === 2" class="carousel-item">
+                        <img src="img5.png" alt="Chris Hemsworth" class="w-full h-auto">
+                    </div>
+                    <div x-show="activeSlide === 3" class="carousel-item">
+                        <img src="imgs3.png" alt="Ryan Reynolds" class="w-full h-[100px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.3.4/cdn.min.js"></script>
+</body>
+
+</html>

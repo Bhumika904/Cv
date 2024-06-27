@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"  class="bg-blue-600">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    /* .slider{
+        display: flex;
+         animation: slide 5s infinite;
+    } */
+    @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            75% {
+                transform: translateX(-200%);
+            }
+            100% {
+                transform: translateX(-300%);
+            }
+        }
+</style>
+<body>
+    <div class="w-[500px] bg-green-400">
+        <div class="slider-wrapper w-[10rem] h-[5rem] aspect-video absolute bg-yellow-400">
+            <div class="slider w-[2400px] grid grid-cols-4 bg-purple-400">
+                <div class="w-[400px] h-[600px]">
+                    <img src="img1.png" class="object-cover w-full h-full">
+                </div>
+                <div class=" w-[400px] h-[600px]">
+                    <img src="img2.png" class="object-cover w-full h-full">
+                </div>
+                <div class=" w-[400px] h-[600px]">
+                    <img src="download.jpg" class="object-cover w-full h-full">
+                </div>
+                <div class=" w-[400px] h-[600px]">
+                    <img src="logo.png" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
